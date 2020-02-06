@@ -73,4 +73,11 @@ public class Player : MonoBehaviour
         hpValueManager.SetHp(data.hp, data.hpMax);                          // 更新血量(目前，最大)
         StartCoroutine(hpValueManager.ShowValue(damage, "-", Color.white)); // 啟動協程
     }
+
+
+    private void Dead()
+    {
+        ani.SetBool("死亡開關", true);
+        enabled = false;
+    }
 }

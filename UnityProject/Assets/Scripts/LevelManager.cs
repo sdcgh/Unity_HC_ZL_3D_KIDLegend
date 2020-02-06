@@ -13,6 +13,9 @@ public class LevelManager : MonoBehaviour
     [Header("是否自動開門")]
     public bool autoOpenDoor;       // 是否自動開門
 
+
+
+
     private Animator aniDoor;        // 門 (動畫)
     private Image imgCross;          // 轉場
 
@@ -70,4 +73,6 @@ public class LevelManager : MonoBehaviour
         // 載入下一關
         SceneManager.LoadScene("關卡 2");
     }
+
+    
 }
